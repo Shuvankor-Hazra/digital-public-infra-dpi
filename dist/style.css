@@ -865,6 +865,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-b-\[60px\] {
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -946,6 +954,11 @@ video {
                            linear-gradient(187deg, #18b9ff, rgba(19, 156, 216, 0) 0%, rgba(19, 156, 216, 0.29) 0%, #007cb2);
 }
 
+.decoration-slice {
+  -webkit-box-decoration-break: slice;
+          box-decoration-break: slice;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -964,6 +977,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
@@ -1173,6 +1190,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.decoration-inherit {
+  text-decoration-color: inherit;
+}
+
 .opacity-70 {
   opacity: 0.7;
 }
@@ -1189,8 +1210,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .complex-gradient {
@@ -1328,6 +1363,10 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:decoration-inherit:hover {
+  text-decoration-color: inherit;
 }
 
 .group:hover .group-hover\:block {
@@ -1472,6 +1511,10 @@ video {
 
   .lg\:p-\[60px\] {
     padding: 60px;
+  }
+
+  .lg\:p-3 {
+    padding: 0.75rem;
   }
 
   .lg\:px-\[20px\] {
