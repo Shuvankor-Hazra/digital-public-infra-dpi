@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Digital Public Infrastructure</title>
 </head>
 
 <body>
 
-    <!-- Slider -->
+    <!-- Text Slider -->
     <section>
         <div class="text-slider-container">
             <div class="text-slider">
@@ -25,226 +25,144 @@
     </section>
 
     <!-- Header & Banner -->
-    <section class="relative overflow-hidden">
-        <div class="absolute z-50 w-full top-3">
-            <!-- Header  -->
+    <section>
+        <div class="relative overflow-hidden">
+            <div class="absolute z-50 w-full top-3">
 
-            <div class="max-w-[1280px] mx-auto">
-                <nav class="flex items-center justify-between px-4 py-4">
-                    <!-- Logo -->
-                    <div>
-                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2a_dpi-logo-white.svg"
-                            alt="logo" class="h-14 md:h-16 lg:h-24">
-                    </div>
+                <!-- Header  -->
+                <div class="max-w-[1280px] mx-auto">
+                    <nav class="flex items-center justify-between px-4 py-4">
+                        <!-- Logo -->
+                        <div>
+                            <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2a_dpi-logo-white.svg"
+                                alt="logo" class="h-14 md:h-16 lg:h-24">
+                        </div>
 
-                    <!-- Desktop Nav Items -->
-                    <div class="desktop-menu flex items-center space-x-5">
-                        <ul class="flex space-x-5 text-white">
-                            <li><a href="#"
-                                    class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Framework</a>
-                            </li>
-                            <li><a href="#"
-                                    class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Highlight</a>
-                            </li>
-                            <li><a href="#"
-                                    class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Working
-                                    Group Members</a></li>
-                            <li><a href="#"
-                                    class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Get
-                                    Involved</a>
-                            </li>
+                        <!-- Desktop Nav Items -->
+                        <div class="desktop-menu flex items-center space-x-5">
+                            <ul class="flex items-center space-x-5 text-white">
+                                <li><a href="#"
+                                        class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Framework</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Highlight</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Working
+                                        Group Members</a></li>
+                                <li><a href="#"
+                                        class="text-lg font-bold uppercase hover:border-yellow-500 hover:border-b-4 transition-all">Get
+                                        Involved</a>
+                                </li>
 
-                            <!-- Language Dropdown for Desktop (Hover) -->
-                            <div class="relative text-white rounded-lg group">
-                                <button
-                                    class="p-1 border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
-                                    <span class="text-xl">&#127760;</span> <!-- Language Icon -->
-                                </button>
-                                <!-- Language Dropdown Menu (Visible on Hover) -->
-                                <div
-                                    class="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-lg hidden group-hover:block">
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arabic</a>
+                                <!-- Language Dropdown for Desktop (Hover) -->
+                                <div class="relative text-white rounded-lg group">
+                                    <button
+                                        class="p-1 border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
+                                        <span class="text-xl">&#127760;</span> <!-- Language Icon -->
+                                    </button>
+                                    <!-- Language Dropdown Menu (Visible on Hover) -->
+                                    <div
+                                        class="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-lg hidden group-hover:block border-2  border-gray-500">
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arabic</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
 
-                    <!-- Hamburger Icon -->
-                    <button id="hamburgerButton" class="hamburger-icon text-2xl">
-                        &#9776; <!-- Hamburger Icon -->
-                    </button>
-
-                    <!-- Mobile Nav Dropdown -->
-                    <div id="mobileMenu"
-                        class="mobile-menu fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                        <button id="closeButton" class="absolute top-4 right-4 text-3xl font-bold">
-                            &times; <!-- Close Icon -->
+                        <!-- Hamburger Icon -->
+                        <button id="hamburgerButton" class="hamburger-icon text-2xl">
+                            &#9776; <!-- Hamburger Icon -->
                         </button>
-                        <ul class="space-y-5 text-center">
-                            <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Framework</a></li>
-                            <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Highlight</a></li>
-                            <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Working Group
-                                    Members</a></li>
-                            <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Get Involved</a>
-                            </li>
 
-                            <!-- Mobile Language Dropdown -->
-                            <div class="relative mt-5" x-data="{ mobileDropdownOpen: false }">
-                                <button @click="mobileDropdownOpen = !mobileDropdownOpen"
-                                    class="p-2 border-2 border-white bg-white text-black rounded-lg">
-                                    <span class="text-xl">&#127760;</span> <!-- Language Icon -->
-                                </button>
-                                <div x-show="mobileDropdownOpen"
-                                    class="absolute w-40 mt-2 bg-white text-black rounded-lg shadow-lg">
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arabic</a>
+                        <!-- Mobile Nav Dropdown -->
+                        <div id="mobileMenu"
+                            class="mobile-menu fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+                            <button id="closeButton" class="absolute top-4 right-4 text-3xl font-bold">
+                                &times; <!-- Close Icon -->
+                            </button>
+                            <ul class="space-y-5 text-center">
+                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Framework</a>
+                                </li>
+                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Highlight</a>
+                                </li>
+                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Working Group
+                                        Members</a></li>
+                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Get Involved</a>
+                                </li>
+
+                                <!-- Mobile Language Dropdown -->
+                                <div class="relative mt-5" x-data="{ mobileDropdownOpen: false }">
+                                    <button @click="mobileDropdownOpen = !mobileDropdownOpen"
+                                        class="p-2 border-2 border-white bg-white text-black rounded-lg">
+                                        <span class="text-xl">&#127760;</span> <!-- Language Icon -->
+                                    </button>
+                                    <div x-show="mobileDropdownOpen"
+                                        class="absolute w-40 mt-2 bg-white text-black rounded-lg shadow-lg">
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arabic</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </ul>
-                    </div>
-                </nav>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
 
-
-
-
-            <!-- <div class="max-w-[1280px] mx-auto">
-                <nav class="flex items-center justify-between px-[10px]">
-                    {/* Logo */}
-                    <div>
-                        <img src={logo} alt="logo" class="h-14 md:h-16 lg:h-24" />
-                    </div>
-
-                    {/* Desktop Nav items */}
-                    <div class="items-center hidden gap-5 md:flex">
-                        <ul class="flex gap-5">{navLinks}</ul>
-
-                        {/* Custom Hover Dropdown */}
-                        <div class="relative text-white rounded-lg hover:bg-white hover:text-black" onMouseEnter={()=>
-                            setIsDropdownOpen(true)}
-                            onMouseLeave={() => setIsDropdownOpen(false)}
-                            >
+            <!-- Banner -->
+            <div class="bg-custom-gradient h-[750px] md:h-[850px] lg:h-[713px] w-full rounded-b-[60px   ]">
+                <div
+                    class="flex flex-col lg:flex-row justify-center items-center max-w-[1280px] mx-auto pt-24 md:pt-28  px-10">
+                    <div class="z-40 flex-1 text-center lg:text-left">
+                        <h2 class="text-white font-bold text-[30px] md:text-[55px] leading-none">
+                            The Universal DPI Safeguards Framework is live
+                        </h2>
+                        <p class="mt-5 text-xl text-white">
+                            The Framework (version 1.0) is the result of a multi-stakeholder
+                            approach to ensure DPI implementations mitigate risks at both the
+                            individual and societal level, advance the Sustainable Development
+                            Goals and foster trust and equity across all countries.
+                        </p>
+                        <div class="flex flex-col items-center justify-center gap-5 mt-10 lg:flex-row">
                             <button
-                                class="p-1 border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
-                                <IoLanguage class="text-xl" />
+                                class="w-full bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full min-w-[320px] justify-end">
+                                <div class="flex flex-col items-end justify-end">
+                                    <span class="text-md">Read the</span>
+                                    <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
+                                        Guide to the Framework
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="max-w-[30px]"
+                                        src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
+                                        alt="" />
+                                </div>
                             </button>
-                            {isDropdownOpen && (
-                            <ul class="absolute right-0 w-40 text-black bg-white rounded-b-lg shadow-lg">
-                                <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                    English
-                                </li>
-                                <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                    Español
-                                </li>
-                                <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                    Français
-                                </li>
-                                <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                    Arabic
-                                </li>
-                            </ul>
-                            )}
+                            <button
+                                class="w-full bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full min-w-[30px] justify-end">
+                                <div class="flex flex-col items-end leading-tight">
+                                    <span class="text-sm lg:text-md">Access the</span>
+                                    <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
+                                        Safeguards Framework
+                                    </p>
+                                </div>
+                                <div>
+                                    <img class="max-w-[30px]"
+                                        src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
+                                        alt="" />
+                                </div>
+                            </button>
                         </div>
                     </div>
-
-                    {/* Hamburger icon for mobile */}
-                    <div class="md:hidden" ref={mobileMenuRef}>
-                        <button onClick={toggleMobileMenu} class="text-2xl text-white">
-                            {isMobileMenuOpen ?
-                            <IoClose /> :
-                            <IoMenu />}
-                        </button>
+                    <div class="absolute z-10 flex-1 lg:relative lg:top-16 top-36 opacity-70 ">
+                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"
+                            alt="" class="w-full max-h-[660px]" />
                     </div>
-                </nav>
-
-                {/* Mobile Nav Dropdown */}
-                {isMobileMenuOpen && (
-                <div class="md:hidden">
-                    <ul class="flex flex-col gap-2 p-4 text-center text-white bg-gray-800">
-                        {navLinks}
-                    </ul>
-                    <div class="relative text-white rounded-lg hover:bg-white hover:text-black" onMouseEnter={()=>
-                        setIsDropdownOpen(true)}
-                        onMouseLeave={() => setIsDropdownOpen(false)}
-                        ref={dropdownRef}
-                        >
-                        <button
-                            class="flex justify-center w-full p-1 mt-2 text-black bg-white border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
-                            <IoLanguage class="text-xl" />
-                        </button>
-                        {isDropdownOpen && (
-                        <ul class="absolute left-0 z-50 w-full text-black bg-white rounded-b-lg shadow-lg">
-                            <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                English
-                            </li>
-                            <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                Español
-                            </li>
-                            <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                Français
-                            </li>
-                            <li class="px-4 py-2 cursor-pointer hover:bg-gray-200">
-                                Arabic
-                            </li>
-                        </ul>
-                        )}
-                    </div>
-                </div>
-                )}
-            </div> -->
-        </div>
-        <div class="bg-custom-gradient h-[750px] md:h-[850px] lg:h-[713px] w-full rounded-b-[96px]">
-            <div
-                class="flex flex-col lg:flex-row justify-center items-center max-w-[1280px] mx-auto pt-24 md:pt-28  px-10">
-                <div class="z-40 flex-1 text-center lg:text-left">
-                    <h2 class="text-white font-bold text-[30px] md:text-[55px] leading-none">
-                        The Universal DPI Safeguards Framework is live
-                    </h2>
-                    <p class="mt-5 text-xl text-white">
-                        The Framework (version 1.0) is the result of a multi-stakeholder
-                        approach to ensure DPI implementations mitigate risks at both the
-                        individual and societal level, advance the Sustainable Development
-                        Goals and foster trust and equity across all countries.
-                    </p>
-                    <div class="flex flex-col items-center justify-center gap-5 mt-10 lg:flex-row">
-                        <button
-                            class=" bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-2xl max-w-[320px] justify-between">
-                            <div class="flex flex-col items-end justify-end">
-                                <span class="text-md">Read The</span>
-                                <span class="text-[18px] md:text-xl font-bold text-right">
-                                    Guide to Framework
-                                </span>
-                            </div>
-                            <div>
-                                <img class="h-[40px]"
-                                    src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
-                                    alt="" />
-                            </div>
-                        </button>
-                        <button
-                            class=" bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-2xl justify-between max-w-[320px]">
-                            <div class="flex flex-col items-end">
-                                <span class="text-sm lg:text-md">Access The</span>
-                                <p class="text-[18px] md:text-xl  font-bold text-right">
-                                    Safeguards Framework
-                                </p>
-                            </div>
-                            <div>
-                                <img class="h-[40px]"
-                                    src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
-                                    alt="" />
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="absolute z-10 flex-1 lg:relative lg:top-16 top-36 opacity-70 ">
-                    <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"
-                        alt="" class="w-full max-h-[660px]" />
                 </div>
             </div>
         </div>
@@ -258,7 +176,7 @@
                     <img src='https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e05_011145.svg'
                         alt="img" class='lg:pr-[100px]' />
                 </div>
-                <div class='flex-1 space-y-10 text-center lg:text-left'>
+                <div class='flex-1 space-y-10 text-center lg:text-left text-[#333]'>
                     <h2 class='text-[30px] lg:text-[44px] uppercase leading-[36px] font-light'>
                         why <br />
                         <span class='font-bold'>now?</span>
@@ -295,7 +213,7 @@
                     <h2 class="text-[44px] uppercase leading-[36px] font-light text-center mb-5">
                         WHAT IS THE FOCUS OF
                         <br />
-                        <span class="font-bold">the DPI Safeguards Initiative?</span>
+                        <span class="font-bold">the DPI Safeguards <br>Initiative?</span>
                     </h2>
                     <p class="max-w-[800px] mx-auto text-center text-lg mt-5 mb-10">
                         Our approach aims to minimize risks across all layers of digital
@@ -308,15 +226,15 @@
                     </p>
                 </div>
                 <!-- {/* cards */} -->
-                <div class="grid items-center justify-center grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div class="grid items-center justify-center grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
                     <!-- {/* card-1 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-[320px] text-center rounded-lg">
+                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df0_icon-framework.svg"
                                 alt="" class="h-[140px]" />
                         </div>
                         <div class="md:h-[180px]">
-                            <h2 class="my-5 text-2xl">DPI Safeguards Framework</h2>
+                            <h2 class="my-5 text-2xl">DPI Safeguards <br>Framework</h2>
                             <p class="text-sm">
                                 Co-created through expert-led discussions and public
                                 contributions, the Universal DPI Safeguards Framework provides
@@ -329,13 +247,13 @@
                         </button>
                     </div>
                     <!-- {/* card-2 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-[320px] text-center rounded-lg">
+                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084def_icon-gitbook.svg"
                                 alt="" class="h-[140px]" />
                         </div>
                         <div class="md:h-[180px]">
-                            <h2 class="my-5 text-2xl">DPI Safeguards Resource Hub</h2>
+                            <h2 class="my-5 text-2xl">DPI Safeguards <br>Resource Hub</h2>
                             <p class="text-sm">
                                 A community hub will feature resources from and for partners,
                                 including the latest iterations of the Framework, DPI research,
@@ -349,14 +267,14 @@
                         </button>
                     </div>
                     <!-- {/* card-3 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-[320px] text-center rounded-lg">
+                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df1_icon-inconty-ap.svg"
                                 alt="" class="md:h-[140px]" />
                         </div>
                         <div class="h-[180px]">
                             <h2 class="my-5 text-2xl">
-                                In-Country DPI Safeguards Adoption
+                                In-Country DPI <br>Safeguards Adoption
                             </h2>
                             <p class="text-sm">
                                 As the DPI Safeguards Framework is being developed, in-country
@@ -377,7 +295,7 @@
     <!-- How do we -->
     <section>
         <div class='max-w-screen-xl w-[90%] py-5 mx-auto lg:my-16 my-10'>
-            <div>
+            <div class="text-[#333]">
                 <h2 class='text-[30px] lg:text-[44px] uppercase leading-[36px] font-light text-center mb-5'>
                     How do we<br />
                     <span class='font-bold'>co-create?</span>
@@ -397,7 +315,7 @@
             <!-- Tab Navigation -->
             <div class="mt-5">
                 <div role="tablist" class="relative justify-center space-x-3 md:space-x-10 tabs flex">
-                    <label class="tab text-xs lg:text-[20px] text-black border-b-8 border-[#139cd8] cursor-pointer"
+                    <label class="tab text-xs lg:text-[20px] text-gray-500 border-b-8 border-[#139cd8] cursor-pointer"
                         data-tab="discover">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df2_icon-discover.svg"
                             alt="Discover icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
@@ -409,7 +327,7 @@
                         <span>Design</span>
                     </label>
                     <label class="tab text-xs lg:text-[20px] text-gray-500 cursor-pointer" data-tab="implement">
-                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df3_icon-design.svg"
+                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df5_icon-implement.svg"
                             alt="Implement icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Implement</span>
                     </label>
@@ -422,11 +340,11 @@
                 </div>
 
                 <!-- Tab Content -->
-                <div class="py-5 my-5 text-center lg:p-10 lg:m-10">
+                <div class="py-5 my-5 text-center lg:p-10 lg:m-10 text-[#333]">
                     <div class="tab-content lg:max-w-[70%] mx-auto leading-none" data-content="discover">
                         <h2 class="text-[32px] font-bold tracking-wider">Discover</h2>
                         <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We uncover insights.</h3>
-                        <p class="text-lg leading-5 text-[#333]">
+                        <p class="text-lg leading-5">
                             By analyzing existing resources, implementation experiences, and expert insights, we map
                             best practices
                             and gather valuable knowledge that informs the development of the Framework.
@@ -435,7 +353,7 @@
                     <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="design">
                         <h2 class="text-[32px] font-bold tracking-wider">Design</h2>
                         <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We build together.</h3>
-                        <p class="text-lg leading-5 text-[#333]">
+                        <p class="text-lg leading-5">
                             Leveraging the discoveries, we co-create adaptable, open standards and guidelines grounded
                             in
                             real-world contexts. Collaboration with communities, working groups, and stakeholders
@@ -446,7 +364,7 @@
                     <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="implement">
                         <h2 class="text-[32px] font-bold tracking-wider">Implement</h2>
                         <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We empower action.</h3>
-                        <p class="text-lg leading-5 text-[#333]">
+                        <p class="text-lg leading-5">
                             Supporting "lighthouse countries" accelerates their implementation journey, driving momentum
                             for
                             widespread adoption of safeguards. Through partnerships and knowledge exchange, this pilot
@@ -457,7 +375,7 @@
                     <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="evolve">
                         <h2 class="text-[32px] font-bold tracking-wider">Evolve</h2>
                         <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We never stop learning.</h3>
-                        <p class="text-lg leading-5 text-[#333]">
+                        <p class="text-lg leading-5">
                             Human voices are at the heart of our journey. Through ongoing "Listening & Learning"
                             efforts, we engage
                             with international organizations, conduct in-country consultations, and host
@@ -486,9 +404,10 @@
                         <span class="font-bold">Involved</span>
                     </h2>
                 </div>
-                <div class="grid items-stretch justify-center grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div class="grid items-stretch justify-center grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+
                     <!-- {/* section-1 */} -->
-                    <div class="p-[60px] border-2 border-white rounded-2xl max-w-[380px] text-center">
+                    <div class="p-[60px] border-4 border-[#edeff0] rounded-3xl max-w-[380px] text-center">
                         <div class="md:h-[200px]">
                             <h2 class="text-2xl font-semibold text-white">
                                 Organize a Gathering
@@ -501,15 +420,16 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center gap-5 px-4 py-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500">
-                                <span>Organize</span>
+                                class="flex items-center justify-end p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                <span class="px-8">Organize</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2e_3-User.svg"
                                     alt="" class="p-4 bg-yellow-500 rounded-full" />
                             </button>
                         </div>
                     </div>
+
                     <!-- {/* section-2 */} -->
-                    <div class="p-[60px] border-2 border-white rounded-2xl max-w-[380px] text-center">
+                    <div class="p-[60px] border-4 border-[#edeff0] rounded-3xl max-w-[380px] text-center">
                         <div class="md:h-[200px]">
                             <h2 class="text-2xl font-semibold text-white">
                                 Contribute to the DPI Safeguards Resource Hub
@@ -521,15 +441,16 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center gap-5 px-4 py-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500">
-                                <span>Contribute</span>
+                                class="flex items-center p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                <span class="px-8">Contribute</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e07_repo-icon.svg"
                                     alt="" class="p-4 bg-yellow-500 rounded-full" />
                             </button>
                         </div>
                     </div>
+
                     <!-- {/* section-3 */} -->
-                    <div class="p-[60px] border-2 border-white rounded-2xl max-w-[380px] text-center">
+                    <div class="p-[60px] border-4 border-[#edeff0] rounded-3xl max-w-[380px] text-center">
                         <div class="md:h-[200px]">
                             <h2 class="text-2xl font-semibold text-white">
                                 Organize a Gathering
@@ -542,8 +463,8 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center gap-5 px-4 py-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500">
-                                <span>Organize</span>
+                                class="flex items-center p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                <span class="px-8">Explore</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e08_calendar_icon.svg"
                                     alt="" class="p-4 bg-yellow-500 rounded-full" />
                             </button>
@@ -584,7 +505,7 @@
     </section>
 
     <script src="../src/script.js"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
 </body>
 
 </html>
