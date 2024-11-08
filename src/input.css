@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.complex-gradient {
+    background-image: linear-gradient(to bottom,
+            rgba(19, 156, 216, 0.75),
+            #0076cb 84%),
+        url("https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"),
+        linear-gradient(to bottom, var(--base-main, #00528c), #00528c);
+    background-blend-mode: normal;
+    background-size: auto 100%;
+    background-position: left center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.text-slider-container {
+    overflow: hidden;
+    background-color: #003366;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+.text-slider {
+    display: inline-block;
+    padding: 0 100%;
+    animation: slide 25s linear infinite;
+    animation-play-state: running;
+}
+
+.text-slider:hover {
+    animation-play-state: paused;
+}
+
+.text-slider p {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Custom styles for the mobile menu background */
+.mobile-menu {
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media query for hamburger icon visibility */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
