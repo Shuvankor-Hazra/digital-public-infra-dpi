@@ -4,20 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
     <title>Digital Public Infrastructure</title>
+
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Fonta Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <!-- Text Slider -->
-
     <section>
         <div class="text-slider-container">
             <div class="text-slider">
                 <div class='flex items-center'>
                     <img src="../src/assets/icon-calender.png" alt="Calender Img" />
-                    <p>Upcoming Webinar on November 6, 2024! What's next: driving adoption of the Universal DPI
+                    <p>Upcoming Webinar on November 6, 2024! What's next: driving adoption of the
+                        Universal DPI
                         Safeguards
                         Framework - 🚨 Register here 🚨</p>
                 </div>
@@ -64,12 +75,13 @@
                                 <!-- Language Dropdown for Desktop (Hover) -->
                                 <div class="relative text-white rounded-lg group">
                                     <button
-                                        class="p-1 border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
-                                        <span class="text-xl">&#127760;</span> <!-- Language Icon -->
+                                        class="p-2 border-2 border-white rounded-full hover:text-black hover:rounded-none hover:rounded-t-full">
+                                        <!-- Language Icon -->
+                                        <span class="text-xl">&#127760;</span>
                                     </button>
                                     <!-- Language Dropdown Menu (Visible on Hover) -->
                                     <div
-                                        class="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-lg hidden group-hover:block border-2  border-gray-500">
+                                        class="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-2xl hidden group-hover:block">
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">English</a>
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">Español</a>
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">Français</a>
@@ -136,7 +148,7 @@
                         </p>
                         <div class="flex flex-col items-center justify-center gap-5 mt-10 lg:flex-row">
                             <button
-                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full justify-end">
+                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full justify-end hover:bg-neutral-200 transition-all duration-200">
                                 <div class="flex flex-col items-end justify-end">
                                     <span class="text-md">Read the</span>
                                     <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
@@ -150,7 +162,7 @@
                                 </div>
                             </button>
                             <button
-                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full  justify-end">
+                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full  justify-end hover:bg-neutral-200 transition-all duration-200">
                                 <div class="flex flex-col items-end leading-tight">
                                     <span class="text-sm lg:text-md">Access the</span>
                                     <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
@@ -210,6 +222,35 @@
         </div>
     </section>
 
+    <!-- Slider -->
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
     <!-- Focus -->
     <section>
         <div
@@ -234,7 +275,8 @@
                 <!-- {/* cards */} -->
                 <div class="grid items-center justify-center grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
                     <!-- {/* card-1 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
+                    <div
+                        class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl cursor-pointer">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df0_icon-framework.svg"
                                 alt="" class="h-[100px] lg:h-[140px]" />
@@ -248,12 +290,13 @@
                             </p>
                         </div>
                         <button
-                            class="mt-14 border-2 border-white rounded-full px-4 py-1 text-white hover:bg-white hover:text-[#139cd8]">
+                            class="mt-14 border-2 border-neutral-200 rounded-full px-4 py-2 text-white hover:bg-neutral-200 hover:text-[#139cd8] font-bold text-lg transition-all duration-300">
                             Access the Universal DPI Safeguards Framework
                         </button>
                     </div>
                     <!-- {/* card-2 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
+                    <div
+                        class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl cursor-pointer">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084def_icon-gitbook.svg"
                                 alt="" class="h-[100px] lg:h-[140px]" />
@@ -268,12 +311,13 @@
                             </p>
                         </div>
                         <button
-                            class="mt-14 border-2 border-white rounded-full px-4 py-1 text-white hover:bg-white hover:text-[#139cd8]">
+                            class="mt-14 border-2 border-neutral-200 rounded-full px-4 py-2 text-white hover:bg-neutral-200 hover:text-[#139cd8] font-bold text-lg transition-all duration-300">
                             Visit the DPI Safeguards Resource Hub
                         </button>
                     </div>
                     <!-- {/* card-3 */} -->
-                    <div class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl">
+                    <div
+                        class="bg-[#139cd8] px-[36px] py-[60px] w-full lg:max-w-full text-center rounded-3xl cursor-pointer">
                         <div class="flex justify-center">
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df1_icon-inconty-ap.svg"
                                 alt="" class="h-[100px] lg:h-[140px]" />
@@ -289,7 +333,7 @@
                             </p>
                         </div>
                         <button
-                            class="mt-14 border-2 border-white rounded-full px-4 py-1 text-white hover:bg-white hover:text-[#139cd8]">
+                            class="mt-14 border-2 border-neutral-200 rounded-full px-4 py-2 text-white hover:bg-neutral-200 hover:text-[#139cd8] font-bold text-lg transition-all duration-300">
                             Access the Universal DPI Safeguards Framework
                         </button>
                     </div>
@@ -346,7 +390,7 @@
                 </div>
 
                 <!-- Tab Content -->
-                <div class="py-5 my-5 text-center lg:p-10 lg:m-10 text-[#333]">
+                <div class="py-5 my-5 text-center lg:p-10 text-[#333] h-60 md:h-44">
                     <div class="tab-content lg:max-w-[70%] mx-auto leading-none" data-content="discover">
                         <h2 class="text-[32px] font-bold tracking-wider">Discover</h2>
                         <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We uncover insights.</h3>
@@ -459,12 +503,11 @@
                     <div class="p-10 lg:p-[60px] border-2 border-[#edeff0] rounded-3xl max-w-[380px] text-center">
                         <div class="md:h-[200px]">
                             <h2 class="text-2xl font-semibold text-white">
-                                Organize a Gathering
+                                Join the Conversation
                             </h2>
                             <p class="mt-5 mb-10 text-sm text-white">
-                                Host discussions on DPI safeguards with your community through
-                                workshops or events. Share your insights and learnings with us!
-                                Get started with our planning kit.
+                                Check out our upcoming events and see how you can get involved in one of our workshops
+                                or meetups.
                             </p>
                         </div>
                         <div class="flex justify-center">
@@ -483,28 +526,67 @@
 
     <!-- Footer -->
     <section>
-        <div class=' bg-gray-800 text-white mt-[10px] pt-[20px] pb-[40px] lg:py-[40px] lg:px-[20px]'>
-            <div class='max-w-screen-xl mx-auto w-[90%]'>
-                <div class='flex flex-col-reverse lg:flex-row items-center lg:gap-[50px] '>
-                    <div class='max-w-[300px] cursor-pointer pb-5 lg:pb-0'>
-                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dd2_UN-Envoy-White-p-500.png"
-                            alt="" />
+        <div class=' bg-[#98c8e1] px-5 '>
+            <div class='max-w-screen-xl mx-auto '>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 py-8 sm:py-20">
+                    <!-- First -->
+                    <div class='lg:col-span-4 flex flex-col gap-6 items-center lg:items-start'>
+                        <div class='cursor-pointer'>
+                            <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2a_dpi-logo-white.svg"
+                                alt="logo" class="h-16 lg:h-24 cursor-pointer">
+                        </div>
+                        <div class="leading-8 text-[#444] text-lg lg:text-start text-center">
+                            <p>Global Self-Care Federation, +41223625384,</P>
+                            <P>Avenue Alfred Cortot 7D, 1260, Nyon, <br>Switzerland</p>
+                        </div>
+                        <div class="space-x-3 text-2xl text-white">
+                            <i class="cursor-pointer p-3 rounded-full bg-[#0d8ccd] fa-brands fa-x-twitter"></i>
+                            <i class="cursor-pointer p-3 rounded-full bg-[#0d8ccd] fa-brands fa-linkedin"></i>
+                            <i class="cursor-pointer p-3 rounded-full bg-[#0d8ccd] fa-brands fa-square-youtube"></i>
+                        </div>
                     </div>
-                    <div class='max-w-[103px] cursor-pointer'>
-                        <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dd1_UNDP-Logo-White-Large-p-500.png"
-                            alt="" />
+
+                    <!-- Second -->
+                    <div class="lg:col-span-5 flex flex-col lg:flex-row lg:gap-20 text-xl text-[#444]">
+                        <ul class="text-center lg:text-left space-y-2">
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">About Self-Care</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Members</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Become a Member</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">News</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Events</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Resources</li>
+                        </ul>
+
+                        <ul class="text-center lg:text-left space-y-2 mt-3 lg:mt-0 ">
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Privacy Policies</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd] leading-8">Environmental <br>Sustainability
+                                Pledges
+                            </li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">Member Initiatives</li>
+                            <li class="cursor-pointer hover:text-[#0d8ccd]">OTC Directory</li>
+                        </ul>
+                    </div>
+
+                    <!-- Third -->
+                    <div class="lg:col-span-3 flex flex-col gap-6 items-center lg:items-start text-center">
+                        <h2 class="text-3xl font-medium text-[#0d8ccd]">Events</h2>
+                        <p class="text-lg text-[#444444]">Keep up to date with latest events</p>
+                        <div class="text-center lg:text-left mb-3">
+                            <p class="text-[#444444] mb-2">Email Address<span class="text-red-500 text-xl">*</span></p>
+                            <input class="w-full px-4 py-2 rounded-lg text-xl outline-none border-none " type="text"
+                                placeholder='E.g: "john.doe@email.com"'>
+                        </div>
+                        <button
+                            class="bg-[#8c275d] text-white text-xl px-8 py-2 rounded-full hover:bg-[#681d45] duration-300">Submit</button>
                     </div>
                 </div>
-                <div class='border border-[#ffffff52]'></div>
-                <div class='flex flex-col items-center justify-between pt-5 lg:flex-row'>
-                    <div class='lg:w-[762px]'>
-                        <h2 class='text-[13px]'>DPI Safeguards is initiated by the Office of the UN Secretary-General’s
-                            Envoy on Technology (OSET) and the United Nations Development Programme (UNDP). © 2024</h2>
-                        <div class='border border-[#ffffff52] my-5 lg:border-none'></div>
-                    </div>
-                    <div>
-                        <button class='text-white btn btn-outline'>Contact Us</button>
-                    </div>
+
+                <div class="border border-[#44444450]"></div>
+                <div class='py-5'>
+                    <h2 class='text-center lg:text-left text-[#444]'>Copyright © 2024 - Global
+                        Self-Care Federation - Some rights reserved.
+                    </h2>
                 </div>
             </div>
         </div>
@@ -512,6 +594,7 @@
 
     <script src="../src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>
