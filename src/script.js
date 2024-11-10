@@ -47,42 +47,27 @@ document.addEventListener("click", (event) => {
 
 
 
-
-// Blog 
+// Blog Section
 document.addEventListener('DOMContentLoaded', function() {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3, // Default for large screens (desktop)
-    spaceBetween: 20, // Adjust the space between slides
+    slidesPerView: 3,
+    spaceBetween: 20,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.next-btn',
+      prevEl: '.prev-btn',
     },
-    // Scrollbar (if needed)
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
     breakpoints: {
-      // Mobile (screen width less than 640px)
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      // Tablet (screen width between 640px and 1024px)
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      // Desktop (screen width 1024px and above)
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      }
-    }
+      0: { slidesPerView: 1, spaceBetween: 10 },
+      640: { slidesPerView: 2, spaceBetween: 15 },
+      1024: { slidesPerView: 3, spaceBetween: 20 },
+    },
   });
 });
+
+

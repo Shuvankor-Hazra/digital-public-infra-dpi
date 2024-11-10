@@ -234,11 +234,10 @@
             </div>
             <!-- Slider main container -->
             <div class="swiper">
-
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper pb-16 text-[#444]">
+                <div class="swiper-wrapper text-[#444] py-16 relative">
                     <!-- Swiper Slide 1 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-view-house-model_23-2150761170.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -254,7 +253,7 @@
                     </div>
 
                     <!-- Swiper Slide 2 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-view-house-model_23-2150761178.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -270,7 +269,7 @@
                     </div>
 
                     <!-- Swiper Slide 3 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761206.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -286,7 +285,7 @@
                     </div>
 
                     <!-- Swiper Slide 4 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761210.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -302,7 +301,7 @@
                     </div>
 
                     <!-- Swiper Slide 5 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/view-3d-house-model_23-2150761160.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -318,7 +317,7 @@
                     </div>
 
                     <!-- Swiper Slide 6 -->
-                    <div class="swiper-slide pt-10">
+                    <div class="swiper-slide">
                         <div class="p-5 rounded-3xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/photorealistic-house-with-wooden-architecture-timber-structure_23-2151302597.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
@@ -334,17 +333,18 @@
                     </div>
                 </div>
 
-
-
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
+                <div class="text-4xl absolute top-0 right-0 flex gap-3 z-10">
+                    <div class="prev-btn">
+                        <i class="fa-regular fa-circle-left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="fa-regular fa-circle-right"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
