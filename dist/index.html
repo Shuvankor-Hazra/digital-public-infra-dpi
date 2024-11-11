@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
@@ -36,10 +38,13 @@
         </div>
     </section>
 
+
+
+
     <!-- Header & Banner -->
     <section>
         <div class="relative overflow-hidden">
-            <div class="absolute z-50 w-full top-3">
+            <div class="absolute z-0 w-full top-3">
 
                 <!-- Header  -->
                 <div class="max-w-[1280px] mx-auto">
@@ -47,28 +52,68 @@
                         <!-- Logo -->
                         <div>
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2a_dpi-logo-white.svg"
-                                alt="logo" class="h-14 md:h-16 lg:h-24 cursor-pointer">
+                                alt="logo" class="cursor-pointer h-14 md:h-16 lg:h-24">
                         </div>
 
                         <!-- Desktop Nav Items -->
-                        <div class="desktop-menu">
-                            <ul class="flex items-center space-x-5 text-white">
+                        <div class="">
+                            <ul class="flex items-center space-x-5 text-white ">
+
+                                <li class="relative nav-item">
+                                    <a href="#"
+                                        class="text-lg font-bold uppercase transition-all nav-link hover:border-b-4 hover:border-yellow-500"
+                                        onclick="toggleDropdown(event, 'main-dropdown')">
+                                        About BNNRC
+                                    </a>
+                                    <ul id="main-dropdown"
+                                        class="absolute z-50 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
+                                        <li class="p-2 hover:bg-red-500">Who We Are</li>
+                                        <li class="p-2">BNNRC Governance</li>
+                                        <li class="p-2">BNNRC Registration</li>
+                                        <li class="p-2">Vision and Mission</li>
+                                        <li class="p-2">Accolades/Awards/Prizes Achievement</li>
+                                        <li class="p-2">BNNRC Strategic Plan</li>
+                                        <li class="p-2">Staff Members</li>
+                                        <li class="flex p-2 nav-item">
+                                            BNNRC Development Partners
+                                            <a href="#" class="block"
+                                                onclick="toggleDropdown(event, 'nested-dropdown')">
+                                                Add an anchor tag to make the nested dropdown toggle clickable
+                                                ▼
+                                            </a>
+                                            <ul id="nested-dropdown"
+                                                class="absolute bottom-0 right-0 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
+                                                <li class="p-2">Present</li>
+                                                <li class="p-2">Past</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- <li @mouseover="isManOpen = true" @mouseleave="isManOpen = false"
+                                    class="relative cursor-pointer ">
+                                    <a href=" #"
+                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">
+                                        About BNNRC</a>
+                                    <ul v-if="isManOpen" class="absolute left-0 text-black bg-white top-full">
+                                        <li class="px-4 py-2 hover:bg-red-500">Drop 1</li>
+                                        <li class="px-4 py-2 hover:bg-red-500">Drop 2</li>
+                                        <li class="px-4 py-2 hover:bg-red-500">Drop 3</li>
+                                    </ul>
+                                </li> -->
+
                                 <li>
                                     <a href="#"
-                                        class="text-lg font-bold uppercase hover:border-b-4 hover:border-yellow-500 transition-all">Framework</a>
+                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Highlight</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-lg font-bold uppercase hover:border-b-4 hover:border-yellow-500 transition-all">Highlight</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="text-lg font-bold uppercase hover:border-b-4 hover:border-yellow-500 transition-all">Working
+                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Working
                                         Group Members</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-lg font-bold uppercase hover:border-b-4 hover:border-yellow-500 transition-all">Get
+                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Get
                                         Involved</a>
                                 </li>
 
@@ -81,25 +126,25 @@
                                     </button>
                                     <!-- Language Dropdown Menu (Visible on Hover) -->
                                     <div
-                                        class="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-2xl hidden group-hover:block">
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">English</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">Español</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">Français</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-lg">Arabic</a>
+                                        class="absolute right-0 z-50 hidden w-40 text-black bg-white rounded-b-lg shadow-2xl group-hover:block">
+                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">English</a>
+                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Español</a>
+                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Français</a>
+                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Arabic</a>
                                     </div>
                                 </div>
                             </ul>
                         </div>
 
                         <!-- Hamburger Icon -->
-                        <button id="hamburgerButton" class="hamburger-icon text-2xl">
+                        <button id="hamburgerButton" class="text-2xl hamburger-icon">
                             &#9776; <!-- Hamburger Icon -->
                         </button>
 
                         <!-- Mobile Nav Dropdown -->
                         <div id="mobileMenu"
-                            class="mobile-menu fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                            <button id="closeButton" class="absolute top-4 right-4 text-3xl font-bold">
+                            class="fixed top-0 left-0 flex flex-col items-center justify-center w-full h-full mobile-menu">
+                            <button id="closeButton" class="absolute text-3xl font-bold top-4 right-4">
                                 &times; <!-- Close Icon -->
                             </button>
                             <ul class="space-y-5 text-center">
@@ -115,11 +160,11 @@
                                 <!-- Mobile Language Dropdown -->
                                 <div class="relative mt-5" x-data="{ mobileDropdownOpen: false }">
                                     <button @click="mobileDropdownOpen = !mobileDropdownOpen"
-                                        class="p-2 border-2 border-white bg-white text-black rounded-lg">
+                                        class="p-2 text-black bg-white border-2 border-white rounded-lg">
                                         <span class="text-xl">&#127760;</span> <!-- Language Icon -->
                                     </button>
                                     <div x-show="mobileDropdownOpen"
-                                        class="absolute w-40 mt-2 bg-white text-black rounded-lg shadow-lg">
+                                        class="absolute w-40 mt-2 text-black bg-white rounded-lg shadow-lg">
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
@@ -177,7 +222,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="absolute z-10 flex-1 lg:relative lg:top-16 top-36 opacity-70 ">
+                    <div class="absolute flex-1 lg:relative lg:top-16 top-36 opacity-70 ">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"
                             alt="" class="w-full max-h-[660px]" />
                     </div>
@@ -225,7 +270,7 @@
     <!-- Blog Slider -->
     <section>
         <div class='max-w-screen-xl w-[90%] py-20 mx-auto lg:my-20 my-10 border-t-gray-500 border-t'>
-            <div class="text-center mb-10">
+            <div class="mb-10 text-center">
                 <h2 class="text-[30px] lg:text-[44px] uppercase leading-[36px] font-light">
                     our
                     <br />
@@ -238,7 +283,7 @@
                 <div class="swiper-wrapper text-[#444] py-16 relative">
                     <!-- Swiper Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-2xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-view-house-model_23-2150761170.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -254,7 +299,7 @@
 
                     <!-- Swiper Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-2xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-view-house-model_23-2150761178.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -270,7 +315,7 @@
 
                     <!-- Swiper Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-2xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761206.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -286,7 +331,7 @@
 
                     <!-- Swiper Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-2xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761210.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -302,7 +347,7 @@
 
                     <!-- Swiper Slide 5 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-2xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-2xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/view-3d-house-model_23-2150761160.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -318,7 +363,7 @@
 
                     <!-- Swiper Slide 6 -->
                     <div class="swiper-slide">
-                        <div class="p-5 rounded-3xl shadow-xl border bg-gray-100 hover:scale-105 duration-200">
+                        <div class="p-5 duration-200 bg-gray-100 border shadow-xl rounded-3xl hover:scale-105">
                             <div
                                 class="w-full h-[200px] bg-[url('https://img.freepik.com/free-photo/photorealistic-house-with-wooden-architecture-timber-structure_23-2151302597.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid')] bg-cover bg-center rounded-2xl border-2">
                             </div>
@@ -337,7 +382,7 @@
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="text-4xl absolute top-0 right-0 flex gap-3 z-10">
+                <div class="absolute top-0 right-0 z-10 flex gap-3 text-4xl">
                     <div class="prev-btn">
                         <i class="fa-regular fa-circle-left"></i>
                     </div>
@@ -462,7 +507,7 @@
 
             <!-- Tab Navigation -->
             <div class="mt-5">
-                <div role="tablist" class="relative justify-center space-x-3 md:space-x-10 tabs flex">
+                <div role="tablist" class="relative flex justify-center space-x-3 md:space-x-10 tabs">
                     <label class="tab text-xs lg:text-[20px] text-gray-500 border-b-8 border-[#139cd8] cursor-pointer"
                         data-tab="discover">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df2_icon-discover.svg"
@@ -568,10 +613,10 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center justify-end p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                class="flex items-center justify-end p-2 mt-5 font-semibold text-black transition-all duration-300 bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white">
                                 <span class="px-6">Organize</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2e_3-User.svg"
-                                    alt="" class="p-2 lg:p-3 bg-yellow-500 rounded-full" />
+                                    alt="" class="p-2 bg-yellow-500 rounded-full lg:p-3" />
                             </button>
                         </div>
                     </div>
@@ -589,10 +634,10 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                class="flex items-center p-2 mt-5 font-semibold text-black transition-all duration-300 bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white">
                                 <span class="px-6">Contribute</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e07_repo-icon.svg"
-                                    alt="" class="p-2 lg:p-3 bg-yellow-500 rounded-full" />
+                                    alt="" class="p-2 bg-yellow-500 rounded-full lg:p-3" />
                             </button>
                         </div>
                     </div>
@@ -610,10 +655,10 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="flex items-center p-2 mt-5 font-semibold text-black bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white transition-all duration-300">
+                                class="flex items-center p-2 mt-5 font-semibold text-black transition-all duration-300 bg-white rounded-full text-md hover:bg-yellow-500 hover:text-white">
                                 <span class="px-6">Explore</span>
                                 <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e08_calendar_icon.svg"
-                                    alt="" class="p-2 lg:p-3 bg-yellow-500 rounded-full" />
+                                    alt="" class="p-2 bg-yellow-500 rounded-full lg:p-3" />
                             </button>
                         </div>
                     </div>
@@ -627,12 +672,12 @@
         <div class=' bg-[#98c8e1] px-5 '>
             <div class='max-w-screen-xl mx-auto '>
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 py-8 sm:py-20">
+                <div class="grid grid-cols-1 gap-6 py-8 lg:grid-cols-12 sm:py-20">
                     <!-- First -->
-                    <div class='lg:col-span-4 flex flex-col gap-6 items-center lg:items-start'>
+                    <div class='flex flex-col items-center gap-6 lg:col-span-4 lg:items-start'>
                         <div class='cursor-pointer'>
                             <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084e2a_dpi-logo-white.svg"
-                                alt="logo" class="h-16 lg:h-24 cursor-pointer">
+                                alt="logo" class="h-16 cursor-pointer lg:h-24">
                         </div>
                         <div class="leading-8 text-[#444] text-lg lg:text-start text-center">
                             <p>Global Self-Care Federation, +41223625384,</P>
@@ -647,7 +692,7 @@
 
                     <!-- Second -->
                     <div class="lg:col-span-5 flex flex-col lg:flex-row lg:gap-16 text-2xl lg:text-xl text-[#444]">
-                        <ul class="text-center lg:text-left space-y-3 lg:space-y-2">
+                        <ul class="space-y-3 text-center lg:text-left lg:space-y-2">
                             <li class="cursor-pointer hover:text-[#0d8ccd]">About Self-Care</li>
                             <li class="cursor-pointer hover:text-[#0d8ccd]">Members</li>
                             <li class="cursor-pointer hover:text-[#0d8ccd]">Become a Member</li>
@@ -656,7 +701,7 @@
                             <li class="cursor-pointer hover:text-[#0d8ccd]">Resources</li>
                         </ul>
 
-                        <ul class="text-center lg:text-left space-y-3 lg:space-y-2 mt-3 lg:mt-0 ">
+                        <ul class="mt-3 space-y-3 text-center lg:text-left lg:space-y-2 lg:mt-0 ">
                             <li class="cursor-pointer hover:text-[#0d8ccd]">Privacy Policies</li>
                             <li class="cursor-pointer hover:text-[#0d8ccd] leading-10">Environmental <br>Sustainability
                                 Pledges
@@ -667,13 +712,13 @@
                     </div>
 
                     <!-- Third -->
-                    <div class="lg:col-span-3 flex flex-col gap-6 items-center lg:items-start text-center">
+                    <div class="flex flex-col items-center gap-6 text-center lg:col-span-3 lg:items-start">
                         <h2 class="text-3xl font-medium text-[#0d8ccd]">Events</h2>
                         <p class="text-lg text-[#444444]">Keep up to date with latest events</p>
-                        <div class="text-center lg:text-left mb-3 w-full">
-                            <p class="text-[#444444] mb-2">Email Address<span class="text-red-500 text-xl">*</span></p>
+                        <div class="w-full mb-3 text-center lg:text-left">
+                            <p class="text-[#444444] mb-2">Email Address<span class="text-xl text-red-500">*</span></p>
                             <input
-                                class="w-full max-w-xl px-4 py-2 rounded-lg lg:text-xl text-center lg:text-left outline-none border-none "
+                                class="w-full max-w-xl px-4 py-2 text-center border-none rounded-lg outline-none lg:text-xl lg:text-left "
                                 type="text" placeholder='E.g: "john.doe@email.com"'>
                         </div>
                         <button
@@ -697,3 +742,10 @@
 </body>
 
 </html>
+
+
+<script setup>
+    import { ref } from "vue";
+    const isManOpen = ref(false);
+
+</script>
