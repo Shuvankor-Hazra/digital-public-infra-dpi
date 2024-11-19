@@ -93,14 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// function toggleDropdown(event, dropdownId) {
-//   event.preventDefault(); // Prevent the default anchor behavior
-//   const dropdown = document.getElementById(dropdownId);
-//   dropdown.classList.toggle('hidden');
-// }
-
-
-
 let activeTab = 'discover';
 
 function setActiveTab(tab) {
@@ -129,3 +121,6 @@ function setActiveTab(tab) {
 
 // Set the initial active tab
 setActiveTab(activeTab);
+
+
+
