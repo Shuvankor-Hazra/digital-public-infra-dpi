@@ -38,15 +38,11 @@
         </div>
     </section>
 
-
-
-
     <!-- Header & Banner -->
     <section>
         <div class="relative overflow-hidden">
-            <div class="absolute z-0 w-full top-3">
-
-                <!-- Header  -->
+            <!-- Header  -->
+            <div class="absolute z-50 w-full top-3">
                 <div class="max-w-[1280px] mx-auto">
                     <nav class="flex items-center justify-between p-4">
                         <!-- Logo -->
@@ -56,132 +52,129 @@
                         </div>
 
                         <!-- Desktop Nav Items -->
-                        <div class="">
-                            <ul class="flex items-center space-x-5 text-white ">
-
-                                <li class="relative nav-item">
+                        <div class="items-center hidden gap-5 md:flex">
+                            <ul class="flex items-center space-x-5 text-white">
+                                <!-- Home with Submenu -->
+                                <li class="relative group">
                                     <a href="#"
-                                        class="text-lg font-bold uppercase transition-all nav-link hover:border-b-4 hover:border-yellow-500"
-                                        onclick="toggleDropdown(event, 'main-dropdown')">
-                                        About BNNRC
-                                    </a>
-                                    <ul id="main-dropdown"
-                                        class="absolute z-50 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
-                                        <li class="p-2 hover:bg-red-500">Who We Are</li>
-                                        <li class="p-2">BNNRC Governance</li>
-                                        <li class="p-2">BNNRC Registration</li>
-                                        <li class="p-2">Vision and Mission</li>
-                                        <li class="p-2">Accolades/Awards/Prizes Achievement</li>
-                                        <li class="p-2">BNNRC Strategic Plan</li>
-                                        <li class="p-2">Staff Members</li>
-                                        <li class="flex p-2 nav-item">
-                                            BNNRC Development Partners
-                                            <a href="#" class="block"
-                                                onclick="toggleDropdown(event, 'nested-dropdown')">
-                                                Add an anchor tag to make the nested dropdown toggle clickable
-                                                ▼
-                                            </a>
-                                            <ul id="nested-dropdown"
-                                                class="absolute bottom-0 right-0 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
-                                                <li class="p-2">Present</li>
-                                                <li class="p-2">Past</li>
-                                            </ul>
-                                        </li>
+                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Home</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="absolute left-0 hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 3</a></li>
                                     </ul>
                                 </li>
 
-                                <!-- <li @mouseover="isManOpen = true" @mouseleave="isManOpen = false"
-                                    class="relative cursor-pointer ">
-                                    <a href=" #"
-                                        class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">
-                                        About BNNRC</a>
-                                    <ul v-if="isManOpen" class="absolute left-0 text-black bg-white top-full">
-                                        <li class="px-4 py-2 hover:bg-red-500">Drop 1</li>
-                                        <li class="px-4 py-2 hover:bg-red-500">Drop 2</li>
-                                        <li class="px-4 py-2 hover:bg-red-500">Drop 3</li>
-                                    </ul>
-                                </li> -->
-
-                                <li>
+                                <!-- Highlight with Submenu -->
+                                <li class="relative group">
                                     <a href="#"
                                         class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Highlight</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="absolute left-0 hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 3</a></li>
+                                    </ul>
                                 </li>
-                                <li>
+
+                                <!-- Working Group Members with Submenu -->
+                                <li class="relative group">
                                     <a href="#"
                                         class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Working
                                         Group Members</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="absolute left-0 hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 3</a></li>
+                                    </ul>
                                 </li>
-                                <li>
+
+                                <!-- Get Involved with Submenu -->
+                                <li class="relative group">
                                     <a href="#"
                                         class="text-lg font-bold uppercase transition-all hover:border-b-4 hover:border-yellow-500">Get
                                         Involved</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="absolute left-0 hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 3</a></li>
+                                    </ul>
                                 </li>
-
-                                <!-- Language Dropdown for Desktop (Hover) -->
-                                <div class="relative text-white rounded-lg group">
-                                    <button
-                                        class="p-2 border-2 border-white rounded-full hover:text-black hover:rounded-none hover:rounded-t-full">
-                                        <!-- Language Icon -->
-                                        <span class="text-xl">&#127760;</span>
-                                    </button>
-                                    <!-- Language Dropdown Menu (Visible on Hover) -->
-                                    <div
-                                        class="absolute right-0 z-50 hidden w-40 text-black bg-white rounded-b-lg shadow-2xl group-hover:block">
-                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">English</a>
-                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Español</a>
-                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Français</a>
-                                        <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Arabic</a>
-                                    </div>
-                                </div>
                             </ul>
                         </div>
 
-                        <!-- Hamburger Icon -->
-                        <button id="hamburgerButton" class="text-2xl hamburger-icon">
+                        <!-- Hamburger Icon for Mobile -->
+                        <button id="hamburgerButton" class="text-2xl md:hidden">
                             &#9776; <!-- Hamburger Icon -->
                         </button>
 
                         <!-- Mobile Nav Dropdown -->
                         <div id="mobileMenu"
-                            class="fixed top-0 left-0 flex flex-col items-center justify-center w-full h-full mobile-menu">
+                            class="fixed top-0 left-0 z-[9999] flex-col items-center justify-center w-full h-full bg-gray-800 text-white hidden">
                             <button id="closeButton" class="absolute text-3xl font-bold top-4 right-4">
                                 &times; <!-- Close Icon -->
                             </button>
                             <ul class="space-y-5 text-center">
-                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Framework</a>
+                                <li class="relative group">
+                                    <a href="#" class="text-lg font-bold uppercase hover:text-gray-300">Home</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Home 3</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Highlight</a>
+                                <li class="relative group">
+                                    <a href="#" class="text-lg font-bold uppercase hover:text-gray-300">Highlight</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Highlight 3</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Working Group
-                                        Members</a></li>
-                                <li><a href="#" class="text-lg font-bold uppercase hover:text-gray-700">Get Involved</a>
+                                <li class="relative group">
+                                    <a href="#" class="text-lg font-bold uppercase hover:text-gray-300">Working Group
+                                        Members</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Member 3</a></li>
+                                    </ul>
                                 </li>
-
-                                <!-- Mobile Language Dropdown -->
-                                <div class="relative mt-5" x-data="{ mobileDropdownOpen: false }">
-                                    <button @click="mobileDropdownOpen = !mobileDropdownOpen"
-                                        class="p-2 text-black bg-white border-2 border-white rounded-lg">
-                                        <span class="text-xl">&#127760;</span> <!-- Language Icon -->
-                                    </button>
-                                    <div x-show="mobileDropdownOpen"
-                                        class="absolute w-40 mt-2 text-black bg-white rounded-lg shadow-lg">
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Español</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Français</a>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arabic</a>
-                                    </div>
-                                </div>
+                                <li class="relative group">
+                                    <a href="#" class="text-lg font-bold uppercase hover:text-gray-300">Get Involved</a>
+                                    <!-- Submenu -->
+                                    <ul
+                                        class="hidden pt-2 bg-white text-black rounded shadow-lg group-hover:block min-w-[150px]">
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 1</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 2</a></li>
+                                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Involved 3</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
 
+
             <!-- Banner -->
             <div class="bg-custom-gradient h-[700px] lg:h-[713px] w-full rounded-b-[60px]">
                 <div
                     class="flex flex-col lg:flex-row justify-center items-center max-w-[1280px] mx-auto pt-24 md:pt-28  px-10">
-                    <div class="z-40 flex-1 text-center lg:text-left">
+                    <div class="flex-1 text-center lg:text-left">
                         <h2 class="text-white font-bold text-[30px] md:text-[55px] leading-none">
                             The Universal DPI Safeguards Framework is live
                         </h2>
@@ -193,7 +186,7 @@
                         </p>
                         <div class="flex flex-col items-center justify-center gap-5 mt-10 lg:flex-row">
                             <button
-                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full justify-end hover:bg-neutral-200 transition-all duration-200">
+                                class="min-w-[320px] z-10 bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full justify-end hover:bg-neutral-200 transition-all duration-200">
                                 <div class="flex flex-col items-end justify-end">
                                     <span class="text-md">Read the</span>
                                     <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
@@ -207,7 +200,7 @@
                                 </div>
                             </button>
                             <button
-                                class="min-w-[320px] bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full  justify-end hover:bg-neutral-200 transition-all duration-200">
+                                class="min-w-[320px] z-10 bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-full  justify-end hover:bg-neutral-200 transition-all duration-200">
                                 <div class="flex flex-col items-end leading-tight">
                                     <span class="text-sm lg:text-md">Access the</span>
                                     <p class="text-[18px] md:text-xl text-nowrap font-bold text-right">
@@ -222,7 +215,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="absolute flex-1 lg:relative lg:top-16 top-36 opacity-70 ">
+                    <div class="absolute z-0 flex-1 lg:relative lg:top-16 top-36 opacity-70">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"
                             alt="" class="w-full max-h-[660px]" />
                     </div>
@@ -268,7 +261,7 @@
     </section>
 
     <!-- Blog Slider -->
-    <section>
+    <section class="hidden">
         <div class='max-w-screen-xl w-[90%] py-20 mx-auto lg:my-20 my-10 border-t-gray-500 border-t'>
             <div class="mb-10 text-center">
                 <h2 class="text-[30px] lg:text-[44px] uppercase leading-[36px] font-light">
@@ -382,8 +375,8 @@
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="absolute top-0 right-0 z-10 flex gap-3 text-4xl">
-                    <div class="prev-btn">
+                <div class="absolute top-0 right-0 z-10 flex gap-5 text-4xl ">
+                    <div class="prev-btn ">
                         <i class="fa-regular fa-circle-left"></i>
                     </div>
                     <div class="next-btn">
@@ -391,6 +384,100 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section>
+        <div class='max-w-screen-xl w-[90%] py-20 mx-auto lg:my-20 my-10 border-t-gray-500 border-t'>
+            <div class="mb-10 text-center">
+                <h2 class="text-[30px] lg:text-[44px] uppercase leading-[36px] font-light">
+                    our
+                    <br />
+                    <span class="font-bold">Blogs</span>
+                </h2>
+            </div>
+            <!-- Card main container -->
+            <div class="space-y-10">
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-col items-start gap-5 p-8 space-y-5 shadow-xl lg:p-10 bg-slate-100 rounded-xl lg:flex-row md:items-center md:space-y-0 md:space-x-5">
+                    <div class="w-full lg:w-1/2 rounded-xl">
+                        <img src="https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682288.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid"
+                            alt="" class="object-cover w-full rounded-xl">
+                    </div>
+                    <div class="justify-between space-y-8 lg:w-1/2">
+                        <h2 class="text-xl font-bold lg:text-3xl">Distinctively supply interoperable customer service
+                        </h2>
+                        <p class="text-base sm:text-xs text-slate-700">
+                            Distinctively parallel task cooperative architectures before high-payoff expertise.
+                            Energistically
+                            coordinate
+                            interactive leadership skills vis-a-vis technically sound opportunities. Credibly supply
+                            economically sound
+                            meta-services vis-a-vis end-to-end intellectual capital. Proactively monetize out-of-the-box
+                            alignments.
+                        </p>
+                        <button
+                            class="bg-[#8c275d] text-white text-base lg:text-xl px-8 py-2 rounded-full hover:bg-[#681d45] duration-300">
+                            See More
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-col-reverse items-start gap-5 p-8 space-y-5 shadow-xl lg:p-10 bg-slate-100 rounded-xl lg:flex-row md:items-center md:space-y-0 md:space-x-5">
+                    <div class="w-full space-y-5 lg:w-1/2">
+                        <h2 class="text-xl font-bold lg:text-3xl">Intrinsicly evisculate client-centered mindshare
+                            vis-a-vis</h2>
+                        <p class="text-base sm:text-xs text-slate-700">
+                            Distinctively parallel task cooperative architectures before high-payoff expertise.
+                            Energistically
+                            coordinate
+                            interactive leadership skills vis-a-vis technically sound opportunities. Credibly supply
+                            economically sound
+                            meta-services vis-a-vis end-to-end intellectual capital. Proactively monetize out-of-the-box
+                            alignments.
+                        </p>
+                        <button
+                            class="bg-[#8c275d] text-white text-base lg:text-xl px-8 py-2 rounded-full hover:bg-[#681d45] duration-300">
+                            See More
+                        </button>
+                    </div>
+                    <div class="w-full lg:w-1/2 rounded-xl">
+                        <img src="https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682294.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid"
+                            alt="" class="object-cover w-full rounded-xl">
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-col items-start gap-5 p-8 space-y-5 shadow-xl lg:p-10 bg-slate-100 rounded-xl lg:flex-row md:items-center md:space-y-0 md:space-x-5">
+                    <div class="w-full lg:w-1/2 rounded-xl">
+                        <img src="https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682296.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid"
+                            alt="" class="object-cover w-full rounded-xl">
+                    </div>
+                    <div class="w-full space-y-5 lg:w-1/2">
+                        <h2 class="text-xl font-bold lg:text-3xl">Appropriately empower focused human capital</h2>
+                        <p class="text-base sm:text-xs text-slate-700">
+                            Distinctively parallel task cooperative architectures before high-payoff expertise.
+                            Energistically
+                            coordinate
+                            interactive leadership skills vis-a-vis technically sound opportunities. Credibly supply
+                            economically sound
+                            meta-services vis-a-vis end-to-end intellectual capital. Proactively monetize out-of-the-box
+                            alignments.
+                        </p>
+                        <button
+                            class="bg-[#8c275d] text-white text-base lg:text-xl px-8 py-2 rounded-full hover:bg-[#681d45] duration-300">
+                            See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
     </section>
 
@@ -506,81 +593,93 @@
             </div>
 
             <!-- Tab Navigation -->
-            <div class="mt-5">
-                <div role="tablist" class="relative flex justify-center space-x-3 md:space-x-10 tabs">
-                    <label class="tab text-xs lg:text-[20px] text-gray-500 border-b-8 border-[#139cd8] cursor-pointer"
-                        data-tab="discover">
+            <div>
+                <div role="tablist" class="relative justify-center lg:space-x-10 tabs">
+                    <label class="tab text-xs lg:text-[20px] text-gray-500 pb-[62px]" aria-label="Discover"
+                        onclick="setActiveTab('discover')">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df2_icon-discover.svg"
                             alt="Discover icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Discover</span>
                     </label>
-                    <label class="tab text-xs lg:text-[20px] text-gray-500 cursor-pointer" data-tab="design">
+
+                    <label class="tab text-xs lg:text-[20px] text-gray-500 pb-[62px]" aria-label="Design"
+                        onclick="setActiveTab('design')">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df3_icon-design.svg"
                             alt="Design icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Design</span>
                     </label>
-                    <label class="tab text-xs lg:text-[20px] text-gray-500 cursor-pointer" data-tab="implement">
+
+                    <label class="tab text-xs lg:text-[20px] text-gray-500 pb-[62px]" aria-label="Implement"
+                        onclick="setActiveTab('implement')">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df5_icon-implement.svg"
                             alt="Implement icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Implement</span>
                     </label>
-                    <label class="tab text-xs lg:text-[20px] text-gray-500 cursor-pointer" data-tab="evolve">
+
+                    <label class="tab text-xs lg:text-[20px] text-gray-500 pb-[62px]" aria-label="Evolve"
+                        onclick="setActiveTab('evolve')">
                         <img src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084df4_icon-evolve.svg"
                             alt="Evolve icon" class="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Evolve</span>
                     </label>
-                    <div class='absolute w-full border top-[70px] lg:top-[71px] md:top-[55px] -z-10'></div>
+                    <div class="absolute w-full border top-[65px] -z-10"></div>
                 </div>
 
                 <!-- Tab Content -->
                 <div class="py-5 my-5 text-center lg:p-10 text-[#333] h-60 md:h-44">
-                    <div class="tab-content lg:max-w-[70%] mx-auto leading-none" data-content="discover">
-                        <h2 class="text-[32px] font-bold tracking-wider">Discover</h2>
-                        <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We uncover insights.</h3>
-                        <p class="text-lg leading-5">
-                            By analyzing existing resources, implementation experiences, and expert insights, we map
-                            best practices
-                            and gather valuable knowledge that informs the development of the Framework.
-                        </p>
+                    <div id="discover" class="hidden tab-content">
+                        <div class="lg:max-w-[70%] mx-auto leading-none">
+                            <h2 class="text-[32px] font-bold tracking-wider">Discover</h2>
+                            <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We uncover insights.</h3>
+                            <p class="text-lg leading-5 text-[#333]">By analyzing existing resources, implementation
+                                experiences,
+                                and expert insights, we map best practices and gather valuable knowledge that informs
+                                the
+                                development of the Framework.</p>
+                        </div>
                     </div>
-                    <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="design">
-                        <h2 class="text-[32px] font-bold tracking-wider">Design</h2>
-                        <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We build together.</h3>
-                        <p class="text-lg leading-5">
-                            Leveraging the discoveries, we co-create adaptable, open standards and guidelines grounded
-                            in
-                            real-world contexts. Collaboration with communities, working groups, and stakeholders
-                            ensures continuous
-                            refinement, resulting in a robust yet flexible framework.
-                        </p>
+                    <div id="design" class="hidden tab-content">
+                        <div class="lg:max-w-[70%] mx-auto leading-none">
+                            <h2 class="text-[32px] font-bold tracking-wider">Design</h2>
+                            <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We build together.</h3>
+                            <p class="text-lg leading-5 text-[#333]">Leveraging the discoveries, we co-create adaptable,
+                                open
+                                standards and guidelines grounded in real-world contexts. Collaboration with
+                                communities, working
+                                groups, and stakeholders ensures continuous refinement, resulting in a robust yet
+                                flexible
+                                framework.</p>
+                        </div>
                     </div>
-                    <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="implement">
-                        <h2 class="text-[32px] font-bold tracking-wider">Implement</h2>
-                        <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We empower action.</h3>
-                        <p class="text-lg leading-5">
-                            Supporting "lighthouse countries" accelerates their implementation journey, driving momentum
-                            for
-                            widespread adoption of safeguards. Through partnerships and knowledge exchange, this pilot
-                            phase ensures
-                            continuous learning and evolution of the DPI Safeguards Framework.
-                        </p>
+                    <div id="implement" class="hidden tab-content">
+                        <div class="lg:max-w-[70%] mx-auto leading-none">
+                            <h2 class="text-[32px] font-bold tracking-wider">Implement</h2>
+                            <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We empower action.</h3>
+                            <p class="text-lg leading-5 text-[#333]">Supporting "lighthouse countries" accelerates their
+                                implementation journey, driving momentum for widespread adoption of safeguards. Through
+                                partnerships
+                                and knowledge exchange, this pilot phase ensures continuous learning and evolution of
+                                the DPI
+                                Safeguards Framework.</p>
+                        </div>
                     </div>
-                    <div class="tab-content lg:max-w-[70%] mx-auto leading-none hidden" data-content="evolve">
-                        <h2 class="text-[32px] font-bold tracking-wider">Evolve</h2>
-                        <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We never stop learning.</h3>
-                        <p class="text-lg leading-5">
-                            Human voices are at the heart of our journey. Through ongoing "Listening & Learning"
-                            efforts, we engage
-                            with international organizations, conduct in-country consultations, and host
-                            multi-stakeholder
-                            convenings. This continuous feedback loop refines the DPI Safeguards Framework, ensuring its
-                            relevance,
-                            practicality, and ability to address real-world needs.
-                        </p>
+                    <div id="evolve" class="hidden tab-content">
+                        <div class="lg:max-w-[70%] mx-auto leading-none">
+                            <h2 class="text-[32px] font-bold tracking-wider">Evolve</h2>
+                            <h3 class="text-[27px] text-[#232e3d] font-thin mb-4">We never stop learning.</h3>
+                            <p class="text-lg leading-5 text-[#333]">Human voices are at the heart of our journey.
+                                Through ongoing
+                                "Listening & Learning" efforts, we engage with international organizations, conduct
+                                in-country
+                                consultations, and host multi-stakeholder convenings. This continuous feedback loop
+                                refines the DPI
+                                Safeguards Framework​, ensuring its relevance, practicality, and ability to address
+                                real-world
+                                needs.​</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
     </section>
@@ -744,8 +843,58 @@
 </html>
 
 
-<script setup>
-    import { ref } from "vue";
-    const isManOpen = ref(false);
 
+
+
+
+
+
+
+
+
+
+
+<script>
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeButton = document.getElementById('closeButton');
+
+    hamburgerButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    });
+
+    closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
 </script>
+
+<!-- <li class="relative nav-item">
+                                    <a href="#"
+                                        class="text-lg font-bold uppercase transition-all nav-link hover:border-b-4 hover:border-yellow-500"
+                                        onclick="toggleDropdown(event, 'main-dropdown')">
+                                        About BNNRC
+                                    </a>
+                                    <ul id="main-dropdown"
+                                        class="absolute z-50 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
+                                        <li class="p-2 hover:bg-red-500">Who We Are</li>
+                                        <li class="p-2">BNNRC Governance</li>
+                                        <li class="p-2">BNNRC Registration</li>
+                                        <li class="p-2">Vision and Mission</li>
+                                        <li class="p-2">Accolades/Awards/Prizes Achievement</li>
+                                        <li class="p-2">BNNRC Strategic Plan</li>
+                                        <li class="p-2">Staff Members</li>
+                                        <li class="flex p-2 nav-item">
+                                            BNNRC Development Partners
+                                            <a href="#" class="block"
+                                                onclick="toggleDropdown(event, 'nested-dropdown')">
+                                                Add an anchor tag to make the nested dropdown toggle clickable
+                                                ▼
+                                            </a>
+                                            <ul id="nested-dropdown"
+                                                class="absolute bottom-0 right-0 hidden text-black bg-white border border-gray-300 shadow-md dropdown">
+                                                <li class="p-2">Present</li>
+                                                <li class="p-2">Past</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> -->

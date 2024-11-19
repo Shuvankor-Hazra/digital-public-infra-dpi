@@ -2,23 +2,41 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
     const contents = document.querySelectorAll('.tab-content');
 
-    // Set the first tab and content as active
-    tabs[0].classList.add('text-black', 'border-b-8', 'border-[#139cd8]','pb-5');
-    contents[0].classList.remove('hidden');
+    // Check if tabs and contents are being selected correctly
+    console.log('Tabs:', tabs);
+    console.log('Contents:', contents);
+
+    // Initial setup: activate the first tab and show its content
+    if (tabs.length > 0 && contents.length > 0) {
+        tabs[0].classList.add('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5');
+        contents[0].classList.remove('hidden');
+    }
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
+            // Debug to see which tab is clicked
+            console.log('Tab clicked:', tab);
+
             // Remove active class from all tabs and hide all content
-            tabs.forEach(t => t.classList.remove('text-black', 'border-b-8', 'border-[#139cd8]'));
+            tabs.forEach(t => t.classList.remove('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5'));
             contents.forEach(content => content.classList.add('hidden'));
 
             // Add active class to clicked tab and show corresponding content
-            tab.classList.add('text-black', 'border-b-8', 'border-[#139cd8]','pb-5');
+            tab.classList.add('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5');
             const contentId = tab.getAttribute('data-tab');
-            document.querySelector(`[data-content="${contentId}"]`).classList.remove('hidden');
+            const contentToShow = document.querySelector(`[data-content="${contentId}"]`);
+            
+            // Check if the content to show exists
+            if (contentToShow) {
+                console.log('Content to show:', contentToShow);
+                contentToShow.classList.remove('hidden');
+            } else {
+                console.error('Content not found for tab:', contentId);
+            }
         });
     });
 });
+
 
 
 
@@ -47,7 +65,7 @@ document.addEventListener("click", (event) => {
 
 
 
-// Blog Section
+// Blog Slider Section
 document.addEventListener('DOMContentLoaded', function() {
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
@@ -75,9 +93,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function toggleDropdown(event, dropdownId) {
-  event.preventDefault(); // Prevent the default anchor behavior
-  const dropdown = document.getElementById(dropdownId);
-  dropdown.classList.toggle('hidden');
+// function toggleDropdown(event, dropdownId) {
+//   event.preventDefault(); // Prevent the default anchor behavior
+//   const dropdown = document.getElementById(dropdownId);
+//   dropdown.classList.toggle('hidden');
+// }
+
+
+
+let activeTab = 'discover';
+
+function setActiveTab(tab) {
+    activeTab = tab;
+
+    // Remove active class from all tabs
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // Add active class to the clicked tab
+    document.querySelectorAll(`[aria-label="${tab}"]`).forEach(label => {
+        label.classList.add('active');
+    });
+
+    // Hide all tab content
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+        content.classList.add('hidden');
+    });
+
+    // Show the active tab content
+    document.getElementById(tab).classList.add('active');
+    document.getElementById(tab).classList.remove('hidden');
 }
 
+// Set the initial active tab
+setActiveTab(activeTab);

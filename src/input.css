@@ -3,122 +3,133 @@
 @tailwind utilities;
 
 .complex-gradient {
-    background-image: linear-gradient(to bottom,
-            rgba(19, 156, 216, 0.75),
-            #0076cb 84%),
-        url("https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"),
-        linear-gradient(to bottom, var(--base-main, #00528c), #00528c);
-    background-blend-mode: normal;
-    background-size: auto 100%;
-    background-position: left center;
-    width: 100%;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(19, 156, 216, 0.75),
+      #0076cb 84%
+    ),
+    url("https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"),
+    linear-gradient(to bottom, var(--base-main, #00528c), #00528c);
+  background-blend-mode: normal;
+  background-size: auto 100%;
+  background-position: left center;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 .text-slider-container {
-    overflow: hidden;
-    background-color: #003366;
-    color: white;
-    padding: 5px 0;
-    position: relative;
-    white-space: nowrap;
+  overflow: hidden;
+  background-color: #003366;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+  white-space: nowrap;
 }
 
 .text-slider {
-    display: inline-block;
-    padding: 0 100%;
-    animation: slide 25s linear infinite;
-    animation-play-state: running;
+  display: inline-block;
+  padding: 0 100%;
+  animation: slide 25s linear infinite;
+  animation-play-state: running;
 }
 
 .text-slider:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .text-slider p {
-    display: inline-block;
-    margin-left: 10px;
-    text-decoration: underline;
-    font-size: 16px;
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: underline;
+  font-size: 16px;
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Custom styles for the mobile menu background */
 .mobile-menu {
-    background-color: #f5f5f5;
-    color: #333;
-    display: none;
-}
-
-.hidden {
-    display: none;
+  background-color: #f5f5f5;
+  color: #333;
+  display: none;
 }
 
 /* Media query for hamburger icon visibility */
 @media (max-width: 768px) {
-    .desktop-menu {
-        display: none;
-    }
+  .desktop-menu {
+    display: none;
+  }
 
-    .hamburger-icon {
-        display: block;
-    }
+  .hamburger-icon {
+    display: block;
+  }
 }
 
 @media (min-width: 769px) {
-    .hamburger-icon {
-        display: none;
-    }
+  .hamburger-icon {
+    display: none;
+  }
 
-    .mobile-menu {
-        display: none;
-    }
-}
-
-
-
-
-
-
-.nav-item {
-    position: relative;
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 0;
-    display: none;
-    z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  display: none;
+  z-index: 1000;
 }
 
 .nav-item .dropdown .nav-item {
-    position: relative;
+  position: relative;
 }
 
 .nav-item .dropdown .dropdown {
-    top: 0;
-    left: 100%;
+  top: 0;
+  left: 100%;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tab.active {
+  color: black;
+  border-bottom: 8px solid #139cd8;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
