@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.complex-gradient {
+/* .complex-gradient {
   background-image: linear-gradient(
       to bottom,
       rgba(19, 156, 216, 0.75),
@@ -15,12 +15,26 @@
   background-position: left center;
   width: 100%;
   background-repeat: no-repeat;
+} */
+
+.complex-gradient {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 154, 132, 0.75),
+      #009a84 84%
+    ),
+    url("https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084dee_design.svg"),
+    linear-gradient(to bottom, var(--base-main, #009a84), #009a84);
+  background-blend-mode: normal;
+  background-size: auto 100%;
+  background-position: left center;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 .text-slider-container {
   overflow: hidden;
-  background-color: #003366;
-  color: white;
+  background-color: #f3c60c;
   padding: 5px 0;
   position: relative;
   white-space: nowrap;
@@ -123,7 +137,7 @@
 
 .tab.active {
   color: black;
-  border-bottom: 8px solid #139cd8;
+  border-bottom: 8px solid #009a84;
 }
 
 .tab-content {

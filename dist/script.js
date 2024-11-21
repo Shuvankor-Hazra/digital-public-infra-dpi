@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial setup: activate the first tab and show its content
     if (tabs.length > 0 && contents.length > 0) {
-        tabs[0].classList.add('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5');
+        tabs[0].classList.add('text-black', 'border-b-8', 'border-[#009a84]', 'pb-5');
         contents[0].classList.remove('hidden');
     }
 
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Tab clicked:', tab);
 
             // Remove active class from all tabs and hide all content
-            tabs.forEach(t => t.classList.remove('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5'));
+            tabs.forEach(t => t.classList.remove('text-black', 'border-b-8', 'border-[#009a84]', 'pb-5'));
             contents.forEach(content => content.classList.add('hidden'));
 
             // Add active class to clicked tab and show corresponding content
-            tab.classList.add('text-black', 'border-b-8', 'border-[#139cd8]', 'pb-5');
+            tab.classList.add('text-black', 'border-b-8', 'border-[#009a84]', 'pb-5');
             const contentId = tab.getAttribute('data-tab');
             const contentToShow = document.querySelector(`[data-content="${contentId}"]`);
             
