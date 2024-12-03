@@ -1902,20 +1902,12 @@ input.tab:checked + .tab-content,
   max-height: 250px;
 }
 
-.max-h-\[300px\] {
-  max-height: 300px;
-}
-
 .max-h-\[660px\] {
   max-height: 660px;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[300px\] {
-  min-height: 300px;
 }
 
 .w-8 {
@@ -2132,10 +2124,6 @@ input.tab:checked + .tab-content,
   border-color: rgb(0 154 132 / var(--tw-border-opacity));
 }
 
-.border-\[\#44444450\] {
-  border-color: #44444450;
-}
-
 .border-\[\#edeff0\] {
   --tw-border-opacity: 1;
   border-color: rgb(237 239 240 / var(--tw-border-opacity));
@@ -2144,6 +2132,11 @@ input.tab:checked + .tab-content,
 .border-\[\#f3c60c\] {
   --tw-border-opacity: 1;
   border-color: rgb(243 198 12 / var(--tw-border-opacity));
+}
+
+.border-\[\#fff\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-t-gray-500 {
@@ -2156,14 +2149,9 @@ input.tab:checked + .tab-content,
   background-color: rgb(0 154 132 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#0d8ccd\] {
+.bg-\[\#D3222A\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(13 140 205 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#8c275d\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 39 93 / var(--tw-bg-opacity));
+  background-color: rgb(211 34 42 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f3c60c\] {
@@ -2191,36 +2179,6 @@ input.tab:checked + .tab-content,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#009a83b2\] {
-  background-color: #009a83b2;
-}
-
-.bg-\[\#009a8300\] {
-  background-color: #009a8300;
-}
-
-.bg-\[\#009a8345\] {
-  background-color: #009a8345;
-}
-
-.bg-\[\#009a831f\] {
-  background-color: #009a831f;
-}
-
-.bg-\[\#009a83\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 154 131 / var(--tw-bg-opacity));
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/3d-model-residential-building_23-2150761206\.jpg\?uid\=R134164590\&ga\=GA1\.1\.335310693\.1711634871\&semt\=ais_hybrid\'\)\] {
   background-image: url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761206.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid');
 }
@@ -2246,7 +2204,7 @@ input.tab:checked + .tab-content,
 }
 
 .bg-custom-gradient {
-  background-image: linear-gradient(158deg, rgba(0, 154, 132, 0) 42%, #f3c60c),  
+  background-image: linear-gradient(158deg, rgba(0, 154, 132, 0) 42%, #D3222A),  
                       linear-gradient(184deg, rgba(0, 154, 132, 0.93), #009a84 59%),  
                       linear-gradient(187deg, #009a84, rgba(0, 154, 132, 0) 0%, rgba(0, 154, 132, 0.29) 0%, #006f63);
 }
@@ -2255,37 +2213,9 @@ input.tab:checked + .tab-content,
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-l {
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-}
-
-.from-\[\#009a84\] {
-  --tw-gradient-from: #009a84 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 154 132 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-gray-500 {
-  --tw-gradient-from: #6b7280 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(107 114 128 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-gray-300 {
-  --tw-gradient-from: #d1d5db var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(209 213 219 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-gray-400 {
   --tw-gradient-from: #9ca3af var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(156 163 175 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-gray-200 {
-  --tw-gradient-from: #e5e7eb var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(229 231 235 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2294,29 +2224,8 @@ input.tab:checked + .tab-content,
   --tw-gradient-stops: var(--tw-gradient-from), #e5e7eb var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-gray-400 {
-  --tw-gradient-to: rgb(156 163 175 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #9ca3af var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-\[\#f3c60c\] {
-  --tw-gradient-to: #f3c60c var(--tw-gradient-to-position);
-}
-
-.to-gray-100 {
-  --tw-gradient-to: #f3f4f6 var(--tw-gradient-to-position);
-}
-
-.to-gray-200 {
-  --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
-}
-
 .to-gray-400 {
   --tw-gradient-to: #9ca3af var(--tw-gradient-to-position);
-}
-
-.to-gray-300 {
-  --tw-gradient-to: #d1d5db var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -2350,10 +2259,6 @@ input.tab:checked + .tab-content,
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-10 {
@@ -2436,16 +2341,6 @@ input.tab:checked + .tab-content,
   padding-bottom: 60px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -2460,10 +2355,6 @@ input.tab:checked + .tab-content,
 
 .pt-24 {
   padding-top: 6rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -2507,11 +2398,6 @@ input.tab:checked + .tab-content,
 
 .text-\[44px\] {
   font-size: 44px;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2590,11 +2476,6 @@ input.tab:checked + .tab-content,
   letter-spacing: 0.05em;
 }
 
-.text-\[\#0d8ccd\] {
-  --tw-text-opacity: 1;
-  color: rgb(13 140 205 / var(--tw-text-opacity));
-}
-
 .text-\[\#232e3d\] {
   --tw-text-opacity: 1;
   color: rgb(35 46 61 / var(--tw-text-opacity));
@@ -2603,11 +2484,6 @@ input.tab:checked + .tab-content,
 .text-\[\#333\] {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
-}
-
-.text-\[\#444444\] {
-  --tw-text-opacity: 1;
-  color: rgb(68 68 68 / var(--tw-text-opacity));
 }
 
 .text-\[\#444\] {
@@ -2638,11 +2514,6 @@ input.tab:checked + .tab-content,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#009a84\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 154 132 / var(--tw-text-opacity));
 }
 
 .opacity-70 {
@@ -2712,7 +2583,8 @@ input.tab:checked + .tab-content,
 
 .text-slider-container {
   overflow: hidden;
-  background-color: #f3c60c;
+  background-color: #d3222a;
+  color: #fff;
   padding: 5px 0;
   position: relative;
   white-space: nowrap;
@@ -2733,7 +2605,7 @@ input.tab:checked + .tab-content,
   display: inline-block;
   margin-left: 10px;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 @keyframes slide {
@@ -2834,12 +2706,6 @@ input.tab:checked + .tab-content,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-150:hover {
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -2858,11 +2724,6 @@ input.tab:checked + .tab-content,
 .hover\:bg-\[\#009a84\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 154 132 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#681d45\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(104 29 69 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#f3c60c\]:hover {
@@ -2889,11 +2750,6 @@ input.tab:checked + .tab-content,
   color: rgb(0 154 132 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#0d8ccd\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(13 140 205 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -2902,16 +2758,6 @@ input.tab:checked + .tab-content,
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#f3c60c\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(243 198 12 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:block {
@@ -2966,10 +2812,6 @@ input.tab:checked + .tab-content,
 
   .md\:bg-fixed {
     background-attachment: fixed;
-  }
-
-  .md\:p-10 {
-    padding: 2.5rem;
   }
 
   .md\:pt-28 {
@@ -3046,16 +2888,12 @@ input.tab:checked + .tab-content,
     height: 713px;
   }
 
-  .lg\:w-1\/3 {
-    width: 33.333333%;
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:w-12 {
     width: 3rem;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .lg\:max-w-\[70\%\] {
@@ -3110,12 +2948,12 @@ input.tab:checked + .tab-content,
     padding: 0.75rem;
   }
 
-  .lg\:p-\[60px\] {
-    padding: 60px;
-  }
-
   .lg\:p-8 {
     padding: 2rem;
+  }
+
+  .lg\:p-\[60px\] {
+    padding: 60px;
   }
 
   .lg\:px-0 {
@@ -3138,11 +2976,6 @@ input.tab:checked + .tab-content,
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-\[20px\] {
