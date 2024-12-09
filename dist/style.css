@@ -2054,6 +2054,18 @@ input.tab:checked + .tab-content,
   height: 280px;
 }
 
+.h-\[680px\] {
+  height: 680px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .max-h-\[250px\] {
   max-height: 250px;
 }
@@ -2062,12 +2074,40 @@ input.tab:checked + .tab-content,
   max-height: 660px;
 }
 
+.max-h-\[700px\] {
+  max-height: 700px;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
+.max-h-\[200px\] {
+  max-height: 200px;
+}
+
+.max-h-\[100px\] {
+  max-height: 100px;
+}
+
 .min-h-\[130px\] {
   min-height: 130px;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[700px\] {
+  min-height: 700px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 
 .w-8 {
@@ -2409,6 +2449,11 @@ input.tab:checked + .tab-content,
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#d0033a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 3 58 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/3d-model-residential-building_23-2150761206\.jpg\?uid\=R134164590\&ga\=GA1\.1\.335310693\.1711634871\&semt\=ais_hybrid\'\)\] {
   background-image: url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761206.jpg?uid=R134164590&ga=GA1.1.335310693.1711634871&semt=ais_hybrid');
 }
@@ -2623,6 +2668,10 @@ input.tab:checked + .tab-content,
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -3098,6 +3147,16 @@ input.tab:checked + .tab-content,
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[\#009a84\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 154 132 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#d0033a\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(208 3 58 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#009a84\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 154 132 / var(--tw-bg-opacity));
@@ -3125,6 +3184,20 @@ input.tab:checked + .tab-content,
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#d0033a\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 3 58 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#D3222A\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 34 42 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#009a84\]:hover {
@@ -3240,6 +3313,10 @@ input.tab:checked + .tab-content,
     height: 650px;
   }
 
+  .md\:h-\[550px\] {
+    height: 550px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3258,8 +3335,17 @@ input.tab:checked + .tab-content,
     background-attachment: fixed;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .md\:pt-2 {
+    padding-top: 0.5rem;
   }
 
   .md\:text-\[40px\] {
