@@ -1922,6 +1922,11 @@ input.tab:checked + .tab-content,
   cursor: pointer;
 }
 
+.scroll-py-11 {
+  scroll-padding-top: 2.75rem;
+  scroll-padding-bottom: 2.75rem;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
