@@ -149,3 +149,22 @@
 .tab-content.active {
   display: block;
 }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* Adjust the distance as needed */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation only on large screens */
+@media (min-width: 1024px) {
+  .lg\:animate-moveUpDown {
+    animation: moveUpDown 3s ease-in-out infinite; /* 10s makes it very slow */
+  }
+}
